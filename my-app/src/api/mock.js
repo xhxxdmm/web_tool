@@ -1,0 +1,23 @@
+import Mock from 'mockjs'
+import homeApi from './mockServeData/home'
+import user from './mockServeData/user'
+import permission from './mockServeData/permission'
+ 
+// 定义mock请求拦截
+// Mock.mock('/api/home/getData', homeApi.getStatisticalData)
+// Mock.mock('/api/home/getData', function (){
+//     console.log('拦截到了')
+//     return 1
+// })
+ 
+// 用户列表的数据
+// Mock.mock('/api/user/add', 'post', user.createUser)
+<<<<<<< HEAD
+// Mock.mock('/api/user/edit', 'post', user.updateUser)
+=======
+Mock.mock('/api/user/edit', 'post', user.updateUser)
+>>>>>>> d4ce27fb2171dde8094328a6a597cc1876e877fa
+// Mock.mock('/api/user/del', 'post', user.deleteUser)
+// Mock.mock(/api\/user\/getUser/, user.getUserList)
+ 
+// Mock.mock(/api\/permission\/getMenu/, 'post',permission.getMenu)
