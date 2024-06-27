@@ -1,0 +1,18 @@
+CREATE TABLE `air_1672_b48_b77d` (
+    `id` bigint NOT NULL AUTO_INCREMENT,
+    `name` varchar(50) DEFAULT NULL,
+    `notes` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL,
+    `number` varchar(50) DEFAULT NULL,
+    `record_id` bigint DEFAULT NULL,
+    `revision` varchar(50) DEFAULT NULL,
+    `stp_hw_config` varchar(50) DEFAULT NULL,
+    `stp_name` varchar(50) DEFAULT NULL,
+    `stp_sw_config` varchar(50) DEFAULT NULL,
+    `up_release_lte` varchar(50) DEFAULT NULL,
+    `up_release_nr` varchar(50) DEFAULT NULL,
+    `up_version_lte` varchar(50) DEFAULT NULL,
+    `up_version_nr` varchar(50) DEFAULT NULL,
+    `mu_test_result` varchar(255) DEFAULT NULL,
+    `mu_test_setting` varchar(255) DEFAULT NULL,
+    PRIMARY KEY (`id`)
+) ENGINE = InnoDB AUTO_INCREMENT = 4 DEFAULT CHARSET = utf8mb4 COLLATE = utf8mb4_0900_ai_ci

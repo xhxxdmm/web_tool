@@ -1,0 +1,18 @@
+CREATE TABLE `air_6419_b41` (
+    `id` bigint NOT NULL AUTO_INCREMENT,
+    `Record_id` bigint NOT NULL,
+    `name` varchar(255) NOT NULL,
+    `revision` varchar(50) DEFAULT NULL,
+    `number` varchar(50) DEFAULT NULL,
+    `stp_name` varchar(50) DEFAULT NULL,
+    `stp_hw_config` varchar(50) DEFAULT NULL,
+    `stp_sw_config` varchar(50) DEFAULT NULL,
+    `up_version_nr` varchar(50) DEFAULT NULL,
+    `up_release_nr` varchar(50) DEFAULT NULL,
+    `up_version_lte` varchar(50) DEFAULT NULL,
+    `up_release_lte` varchar(50) DEFAULT NULL,
+    `channel_model` varchar(255) DEFAULT NULL,
+    `lac_config_file` varchar(50) DEFAULT NULL,
+    `notes` varchar(50) DEFAULT NULL,
+    PRIMARY KEY (`id`)
+) ENGINE = InnoDB AUTO_INCREMENT = 23 DEFAULT CHARSET = utf8mb3
