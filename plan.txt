@@ -1,0 +1,10 @@
+1
+主要做的是DU和Radio的集成测试
+
+1.天线校准AC
+2.AAS RAN integration的AC和cell shaping
+3.可以对应看下相关的协议
+https://www.3gpp.org/ftp/Specs/archive/38_series/38.211
+4.可以internal搜一些Radio、 DU相关知识
+
+

@@ -1,0 +1,21 @@
+
+
+1、普通用户解压nginx-1.18.0.tar.gz
+
+2、root用户执行yum install gcc* zlib zlib-devel pcre pcre-devel openssl openssl-deve
+
+下面的3和4步骤出现报错不用管，继续走
+第3步记得改三个参数哦
+3、切换到普通用户，进入到nginx-1.18.0文件夹，执行./configure --user=eeuhnzm --group=eeuhnzm --prefix=/home/leeUser01/nginx-1.18.0 --with-http_stub_status_module --with-http_sub_module --with-http_ssl_module --with-pcre
+
+4、接着执行make && make install
+
+5、查看是否有了sbin目录
+
+6、进入到conf目录，修改nginx.conf文件，这里改了nginx的启动端口、日志路径和log_format(将注释放开)
+
+7、在nginx-1.18.0目录下创建logs文件夹
+
+8、进入到sbin目录，执行./nginx -t看看是否有两行成功。
+
+/home/eeuhnzm/nginx-1.13.6/sbin/nginx -c /home/eeuhnzm/nginx-1.13.6/conf/nginx.conf
